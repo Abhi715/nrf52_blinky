@@ -59,7 +59,7 @@ main(int argc, char **argv)
         ++g_task1_loops;
 
         /* Wait one second */
-        os_time_delay(OS_TICKS_PER_SEC);
+        os_time_delay(OS_TICKS_PER_SEC / 4);
 
         /* Toggle the LED */
         hal_gpio_toggle(g_led_pin);
